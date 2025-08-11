@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>halaman1</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    h1, h2 {
+      margin: 0.5rem 0;
+    }
+    /* Album foto */
+    .album {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 1rem;
+    }
+    .album img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .album img:hover {
+      transform: scale(1.05);
+      }
+      /* Tentang kita */
+    .about {
+      background: white;
+      padding: 1.5rem;
+      margin: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Album Foto sosok asli lazz</h1>
+    </header>
+
+    <!-- Album Foto -->
+    <section>
+      <h2 style="text-align:center;">Album Foto</h2>
+      <div class="album">
+        <img src="lazz.jpg" alt="Foto 1">
+        <img src="lizz.jpg" alt="Foto 2">
+        <img src="zul.jpg" alt="Foto 3">
+        <img src="ug.jpg" alt="Foto 4">
+      </div>
+    </section>
+
+    <!-- Tentang Kita -->
+    <section class="about">
+      <h2>Tentang lazz</h2>
+      <p>
+        Halo!disini kamu bisa melihat sosok asli lazz.
+        Terima kasih sudah berkunjung ke halaman ini!
+      </p>
+    </section>
+    <div class="bg" aria-hidden="true"></div>
+    <div class="overlay" aria-hidden="true"></div>
+
+    <main class="hero">
+      <section class="card">
+
+        <h1>untuk melanjutkannya <strong>silakan pencet halaman2</strong>.</h1>
+        <strong><a class="btn" href="halaman2.html"target="blank">halaman2</a></strong>
+      </section>
+    </main>
+  </body>
+</html>
